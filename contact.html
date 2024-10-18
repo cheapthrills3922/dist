@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'>
+                    <a href='index.html'><img src='./assets/img/logo-2.png' /></a>
+                </li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <label for="check" class="close-menu"><img src="assets/img/icons/xmark-solid.svg" alt=""></label>
+                </span>
+                <label for="check" class="open-menu"><img src="assets/img/icons/bars-solid.svg" alt=""></label>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="page-title">
+                <div class="title-bg"></div>
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-content">
+                <div class="content-wrapper">
+                    <div class="contact-details">
+                        <div class="info1">
+                            <img src="assets/img/icons/phone-solid.svg" alt="">
+                            <span>Phone</span>
+                            <p>+91 7738707366</p>
+                            <p>+91 9004830009</p>
+                        </div>
+                        <div class="info2">
+                            <img src="assets/img/icons/envelope-solid.svg" alt="">
+                            <span>Email</span>
+                            <p>info@domail.com</p>
+                        </div>
+                        <div class="info3">
+                            <img src="assets/img/icons/location-dot-solid.svg" alt="">
+                            <span>Address</span>
+                            <p>131, Santvani Tower, LIC Colony, Borivali(W), Mumbai, Maharashtra</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <div class="contact-intro">
+                            <h2 class="contact-title">Get in Touch</h2>
+                            <p class="contact-description">
+                                Fill out the form below and we'll get back to you as soon as possible.
+                            </p>
+                        </div>
+
+                        <form class="form" action="https://formbold.com/s/3LbDX" method="POST" onsubmit="formClear()">
+
+                            <div class="form-group-container">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input id="name" name="name" class="form-input" placeholder="Your name" type="text"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input id="email" name="email" class="form-input" placeholder="Your email"
+                                        type="email" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input id="phone" name="phone" class="form-input" placeholder="Your phone number"
+                                        type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-textarea" id="message" name="message"
+                                        placeholder="Your message" required></textarea>
+                                </div>
+                            </div>
+                            <button class="form-submit" type="submit">Send Message</button>
+                        </form>
+                        
+                        <!-- script to reset form fields after submitting form -->
+                        <script>
+                            function formClear() {
+                                document.getElementById('name').value = '';
+                                document.getElementById('email').value = '';
+                                document.getElementById('phone').value = '';
+                                document.getElementById('message').value = '';
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="map">
+                    <h3>Office Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677.996350522506!2d72.84968216393591!3d19.239950157109902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b120f141f8d7%3A0x83553dab013dd0f5!2sSantvani%20Tower%2C%20LIC%20Colony%2C%20Borivali%2C%20Mumbai%2C%20Maharashtra%20400103!5e0!3m2!1sen!2sin!4v1726779069549!5m2!1sen!2sin"
+                        width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="whatsapp">
+                <span>Chat on Whatsapp</span>
+                <div class="glass-effect"></div>
+                <a href="https://wa.me/917738707366"><img src="assets/img/icons/whatsapp-brands-solid.svg" alt=""></a> 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><img src="assets/img/logo-2.png" alt="GG Traders Logo" /></a>
+            </div>
+            <div class="footer-products">
+                <h3>Products</h3>
+                <div class="content">
+                    <div class="list">
+                        <a href="product/turmeric.html">Bamboo Incense Sticks</a>
+                        <a href="product/raisins.html">Raisins</a>
+                        <a href="product/turmeric.html">Turmeric</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="content">
+                    <span onclick="window.open('tel:7738707366')" ; rel="noopener noreferrer" target="_blank">
+                        <img src="assets/img/icons/phone-solid.svg" alt="">+91 7738707366
+                    </span>
+                    <span onclick="window.open('tel:9004830009')" ; rel="noopener noreferrer" target="_blank">
+                        <img class="no-icon" src="assets/img/icons/phone-solid.svg" alt="">+91 9004830009
+                    </span>
+                    <span onclick="window.open('mailto:info@domain.com')" ; rel="noopener noreferrer" target="_blank">
+                        <img src="assets/img/icons/envelope-solid.svg" alt="">info@domain.com
+                    </span>
+                </div>
+            </div>
+            <div class="footer-social-media">
+                <h3>Follow us on</h3>
+                <span>
+                    <a href="#"><img src="assets/img/icons/instagram-brands-solid.svg" alt="instagram icon"></a>
+                    <a href="#"><img src="assets/img/icons/facebook-brands-solid.svg" alt="facebook icon"></a>
+                    <a href="#"><img src="assets/img/icons/youtube-brands-solid.svg" alt="youtube icon"></a>
+                </span>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright &copy; 2024 GG Traders. All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>
