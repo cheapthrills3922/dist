@@ -40,6 +40,13 @@ body {
         top: 3.5rem;
         z-index: -1;
     }
+
+    // text overflow in mobile version
+    h1 {
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 .whatsapp {
